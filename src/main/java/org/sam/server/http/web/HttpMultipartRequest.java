@@ -12,10 +12,9 @@ import java.util.*;
  * @see HttpRequest
  */
 public class HttpMultipartRequest extends HttpRequest {
-
     private final Map<String, Object> files;
 
-    protected HttpMultipartRequest(HttpRequest.RequestParser requestParser) {
+    protected HttpMultipartRequest(RequestParser requestParser) {
         super(requestParser);
         this.files = requestParser.files;
     }
